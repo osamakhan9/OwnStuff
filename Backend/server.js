@@ -16,7 +16,10 @@ app.use(cors())
 
 const User = require('./user/user.router')
 const userData = require('./users_data/users.router')
-
+const men = require('./men/men.router')
+const women = require('./women/women.router')
+const electronic = require('./electronic/electronic.router')
+const kid = require('./kid/kid.router')
 
 
 
@@ -24,6 +27,11 @@ const userData = require('./users_data/users.router')
 
 app.use("/user", User)
 app.use('/users',userData)
+app.use('/men',men)
+app.use('/women',women)
+app.use('/electronic',electronic)
+app.use('/kid',kid)
+
 
 
 
