@@ -1,6 +1,7 @@
 const mongoose = require("mongoose")
 
 const menSchema = new mongoose.Schema({
+	
 	id:{type: Number, require:true},
 	name:{type:String},
 	quantity:{type:String},
@@ -11,10 +12,10 @@ const menSchema = new mongoose.Schema({
 	fimage:{type:String},
 	simage:{type:String},
 	timage:{type:String},
-
 })
 
 const Men = mongoose.model("men",menSchema);
+
 module.exports =Men
 
 
