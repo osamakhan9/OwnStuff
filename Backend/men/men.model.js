@@ -15,6 +15,7 @@ const menSchema = new mongoose.Schema({
 })
 
 const Men = mongoose.model("men",menSchema);
+
 module.exports =Men
 
 
