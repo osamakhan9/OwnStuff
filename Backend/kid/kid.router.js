@@ -18,7 +18,6 @@ app.post('/',async(req,res)=>{
   const {name,quantity,image,hoverImage,price,offerprice,fimage,simage,timage}=req.body
 	try{
 		let kid = await Kid.create({
-			// id: data[0],
 			name,
 			quantity,
 			image,

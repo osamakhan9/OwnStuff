@@ -11,10 +11,10 @@ const menSchema = new mongoose.Schema({
 	fimage:{type:String},
 	simage:{type:String},
 	timage:{type:String},
-
 })
 
 const Kid = mongoose.model("kid",menSchema);
+
 module.exports =Kid
 
 
