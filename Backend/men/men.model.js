@@ -11,7 +11,6 @@ const menSchema = new mongoose.Schema({
 	fimage:{type:String},
 	simage:{type:String},
 	timage:{type:String},
-
 })
 
 const Men = mongoose.model("men",menSchema);
