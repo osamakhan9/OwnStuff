@@ -7,7 +7,7 @@ app.post("/signup",async(req,res)=>{
 	try{
 		const existUser = await User.findOne({email})
 		if(existUser){
-			res.status(404).send('Already exist email')
+			res.status(404).send('This email has been used try to another email')
 		}else{
 			const user = await User.create({
 				name,
