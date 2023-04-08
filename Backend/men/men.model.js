@@ -1,6 +1,7 @@
 const mongoose = require("mongoose")
 
 const menSchema = new mongoose.Schema({
+	
 	id:{type: Number, require:true},
 	name:{type:String},
 	quantity:{type:String},

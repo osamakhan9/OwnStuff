@@ -14,7 +14,6 @@ app.get("/", async(req,res)=>{
 
 app.post('/',async(req,res)=>{
 	// let data = req.body.area.split(",")
-	// res.send("osama")
   const {name,quantity,image,hoverImage,price,offerprice,fimage,simage,timage}=req.body
 	try{
 		let men = await Men.create({
