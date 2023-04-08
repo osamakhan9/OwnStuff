@@ -18,7 +18,7 @@ app.post('/',async(req,res)=>{
   const {name,quantity,image,hoverImage,price,offerprice,fimage,simage,timage}=req.body
 	try{
 		let men = await Men.create({
-			// id: data[0],
+			
 			name,
 			quantity,
 			image,
